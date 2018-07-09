@@ -10,7 +10,7 @@ class GenresController < ApplicationController
 
   def create
     #binding.pry
-    @genre = Genre.create(genre_params(:name, :bio))
+    @genre = Genre.create(genre_params(:name))
     redirect_to genre_path(@genre)
   end
 
@@ -29,5 +29,5 @@ class GenresController < ApplicationController
   def genre_params(*args)
     params.require(:genre).permit(*args)
   end
-  
+
 end
