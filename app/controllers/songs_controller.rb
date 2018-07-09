@@ -10,7 +10,7 @@ class SongsController < ApplicationController
   end
 
   def create
-    #binding.pry
+    binding.pry
     @song = Song.create(song_params(:name, :artist_id, :genre_id))
     redirect_to song_path(@song)
   end
