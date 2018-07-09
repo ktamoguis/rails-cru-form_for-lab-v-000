@@ -20,7 +20,7 @@ class ArtistsController < ApplicationController
 
   def update
     @artist = Artist.find(params[:id])
-    @post.update(title: params[:title], description: params[:description])
+    @artist.update(title: params[:title], description: params[:description])
     redirect_to post_path(@post)
   end
 
