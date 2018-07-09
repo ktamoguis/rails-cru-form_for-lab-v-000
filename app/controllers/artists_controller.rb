@@ -8,4 +8,7 @@ class ArtistsController < ApplicationController
     @artist = Artist.new
   end
 
+  def edit 
+  end
+
 end
