@@ -8,7 +8,8 @@ class ArtistsController < ApplicationController
     @artist = Artist.new
   end
 
-  def edit 
+  def edit
+    @artist = Artist.find(params[:id])
   end
 
 end
