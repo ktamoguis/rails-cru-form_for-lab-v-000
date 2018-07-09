@@ -26,8 +26,8 @@ class ArtistsController < ApplicationController
 
   private
 
-  def post_params(*args)
-    params.require(:post).permit(*args)
+  def artist_params(*args)
+    params.require(:artist).permit(*args)
   end
 
 
