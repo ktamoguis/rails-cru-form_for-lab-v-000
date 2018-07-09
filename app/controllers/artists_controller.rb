@@ -6,7 +6,6 @@ class ArtistsController < ApplicationController
 
   def new
     @artist = Artist.new
-    redirect to
   end
 
   def create
