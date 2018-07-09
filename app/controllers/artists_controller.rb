@@ -11,7 +11,7 @@ class ArtistsController < ApplicationController
   def create
     binding.pry
     @artist = Artist.create(name: params[:artist][:name], bio: params[:artist][:bio])
-    redirect_to student_path(@student)
+    redirect_to artist_path(@artist)
   end
 
   def edit
