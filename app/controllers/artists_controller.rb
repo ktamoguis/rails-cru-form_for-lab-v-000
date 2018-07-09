@@ -24,6 +24,5 @@ class ArtistsController < ApplicationController
     redirect_to artist_path(@artist)
   end
 
-  end
 
 end
