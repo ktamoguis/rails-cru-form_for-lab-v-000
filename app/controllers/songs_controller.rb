@@ -1,7 +1,7 @@
 class SongsController < ApplicationController
 
   def show
-    binding.pry
+    #binding.pry
     @song = Song.find(params[:id])
   end
 
